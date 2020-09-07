@@ -1,0 +1,628 @@
+html, body {
+	height:100%;
+}
+
+body {
+	font-family: Ubuntu,Arial,Tahoma,sans-serif;
+}
+
+b{
+	font-family: Ubuntu,Arial,Tahoma,sans-serif;
+}
+h1, h2, h3{
+	font-family: Ubuntu,Arial,Tahoma,sans-serif;
+}
+.anchor{
+	border-radius: 7px;
+    color: #848d95;
+	border: 1px solid black;
+	font-family: Ubuntu,Arial,Tahoma,sans-serif;
+    font-weight: normal;
+    padding: 7px 10px 9px;
+	margin: 5
+}
+.form-input{
+    border-top-color: rgb(210, 210, 210);
+    border-right-color: rgb(210, 210, 210);
+    border-bottom-color: rgb(210, 210, 210);
+    border-left-color: rgb(210, 210, 210);
+	border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+    padding: 5px 5px;
+    outline: none;
+    margin: 0;
+	width: 230px;
+    max-width: 100%;
+    display: block;
+    font-size: 14px;
+    border-style: solid;
+	box-sizing: border-box;
+    margin-bottom: 0!important;
+	font-family: Ubuntu,Arial,Tahoma,sans-serif;
+    font-weight: normal;
+}
+.form-item {
+	border-radius: 7px;
+    color: #848d95;
+    background: #f9f9f9;
+    border: 1px solid black;
+    box-shadow: -1px 1px #f2f2f2;
+    padding: 7px 10px 9px;
+	margin: 5;
+}
+.submit-btn{
+	background-color: #7c7c7c!important;
+    color: White!important;
+    padding: 12px 32px;
+	font-family: Ubuntu,Arial,Tahoma,sans-serif;
+    font-weight: bold;
+    display: inline-block;
+    padding: 11px 30px;
+    font-size: 14px;
+    line-height: 14px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-width: 1px;
+    border-style: solid;
+    margin-right: 2px;
+    background: none;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+	border-color: Gray;
+}
+
+.submit-btn:hover{
+	background-color: rgb(210, 210, 210)!important;
+	color: black!important;
+}
+
+.url-btn{
+	background-color: #7c7c7c!important;
+    color: White!important;
+    padding: 12px 32px;
+	font-family: Ubuntu,Arial,Tahoma,sans-serif;
+    font-weight: bold;
+    display: inline-block;
+    padding: 5px 5px;
+    font-size: 14px;
+    line-height: 14px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-width: 1px;
+    border-style: solid;
+    margin-right: 2px;
+    background: none;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+	border-color: Gray;
+}
+
+.url-btn:hover{
+	background-color: rgb(210, 210, 210)!important;
+	color: black!important;
+}
+
+.curvedbox{
+	background-color: #ffffff; 
+	border:2px solid; 
+	border-radius: 7px; 
+	color: #702070
+	
+}
+
+.blogbody
+{
+	max-width: 768px; 
+	margin:1 auto;
+}
+
+.blogfooter
+{
+	display: block;
+	text-align: center; 
+	outline: 0 none; 
+	font-family: sans-serif;
+	color: #d4d4d4;
+	margin:5 auto;
+	padding: 4px 4px;
+	border-top:1px solid;
+	border-color: #c9c9c9;
+	background-color:#21292f;
+}
+
+.blogtitle
+{
+	display: block;
+	text-align: center; 
+	outline: 0 none; 
+	font-family: sans-serif;
+	/* background-color: #702070; */
+	border-top:1px solid;
+	border-color: #e4e6e8;
+}
+
+.subjecttilte
+{
+	color: #702070;
+	font-weight: bold;
+	font-size: 22px;
+	
+}
+
+.blogfooter:hover
+{
+	background-color:#51595f;
+	color: #a4a4a4;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.lightweb{
+	text-decoration: none;
+	cursor: auto;
+	color: #d4d4d4;
+}
+.lightweb:hover{
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+	text-decoration: underline;
+}
+.news
+{
+	font-weight: bold;
+	text-align: left;
+	vertical-align: center;
+	padding-top: 3%;
+	padding-left: 3%;
+	font-family: 'Lato', sans-serif;
+	color: #6b6d6a;
+}
+.divide
+{
+	border-top: 1px solid;
+	border-color: #e4e6e8;
+	width: 100%; 
+	display:block;
+}
+a.comment-link
+{
+	cursor: auto;
+	color: #a4a6a8;
+}
+a.comment-link:hover
+{
+	cursor: pointer;
+	color: #3af;
+}
+.commnetbody
+{
+	font-weight: bold;
+	padding-left: 1%;
+}
+.select-multi{
+	padding: 2px 3px;
+	background-color:#f9f9f9;
+	border-radius: 5px;
+	height: 200px; 
+	width:250px;
+    border-width: 1px;
+    border-style: solid;
+	border-color: black;
+	
+}
+.select-multi option:hover{
+	background-color: powderblue;
+}
+
+.select-multi:focus  {
+	
+}
+
+div.welcome-page {
+	background: #1f8dd6;
+	width:100%;
+	overflow:auto;
+	min-height:100%;
+}
+
+div.welcome-page-content {
+	width: 80%;
+	max-width:700px;
+    margin: 150px auto;
+    text-align: center;
+}
+
+p.welcome-page-text {
+	color: white;
+    letter-spacing: 0.05em;
+    opacity: 0.9;
+	text-align: left;
+}
+
+a.pure-button {
+    background-color: #1f8dd6;
+    color: white;
+    padding: 0.5em 2em;
+    border-radius: 5px;
+}
+
+a.pure-button-primary {
+	text-decoration: none;
+	font-family: inherit;
+    background: white;
+    color: #1f8dd6;
+    border-radius: 5px;
+    font-size: 120%;
+}
+
+a.pure-button-primary:hover,a.pure-button-selected:hover {
+    background-color: #0078e7;
+    color: #fff;
+}
+
+/* This is the main heading that appears on the blue section */
+.welcome-page-content h1 {
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    border: 3px solid white;
+    padding: 1em 1.6em;
+    font-weight: 100;
+    border-radius: 5px;
+    line-height: 1em;
+}
+
+.menu-item{
+	display: inline-block;
+    white-space: nowrap;
+    padding: 5px 15px;
+    font-weight: 100;
+    position: relative;
+	color: #c5c5c5;
+	font-size: 16px;
+	font-family: Ubuntu,Arial,Tahoma,sans-serif;
+	text-decoration: none;
+	width: 80%;
+}
+.menuitem-sol{
+	display: inline-block;
+    white-space: nowrap;
+    padding: 5px 15px;
+    font-weight: 100;
+    position: relative;
+    color: #444;
+    font-size: 16px;
+    font-family: Ubuntu,Arial,Tahoma,sans-serif;
+    text-decoration: none;
+    width: 80%;
+	font-weight: bold!important;
+}
+
+.menu-item:hover {
+	color: #444!important;
+	border-radius: 7px;
+	background-color: powderblue;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+
+table.alternate_color{
+	border-collapse: collapse;
+    width: 100%;
+}
+table.alternate_color td{
+	text-align: left;
+    padding: 8px;
+	border: 1px solid powderblue;
+}
+table.alternate_color tr:nth-child(odd) td{
+	background-color: #eee;
+}
+table.alternate_color tr:nth-child(odd):hover td{
+	background-color: powderblue
+}
+table.alternate_color tr:nth-child(even) td{
+   	background-color: white;
+}
+table.alternate_color tr:nth-child(even):hover td{
+	background-color: powderblue
+}
+
+table.alternate_color th{
+	background-color: #5f5f5f;
+	color: white;
+	border: 1px solid powderblue;
+	text-align: center;
+    padding: 8px;
+}
+
+tr.menu td:hover{
+	background-color: powderblue
+}
+.unauthorized{
+	font-family: 'Lato', sans-serif;
+	font-size: 7rem;
+    color: red !important;
+}
+.chat{
+	width: 90%;
+    padding: 5px;
+    overflow: hidden;
+	background: #f8f9f7;
+	font-family: 'Lato', sans-serif;
+	height: 100%;
+	border-radius: 5px;
+	overflow-y: auto;
+}
+.chat li {
+    padding: 0.5rem;
+    overflow: hidden;
+    display: flex;
+}
+.chat-menu{
+	position: relative;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	width: 100%;
+	height: 50px;
+	padding: 0;
+	background: rgba(82,179,217,0.9);
+	z-index: 100;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	border-radius: 5px;
+}
+
+.other .msg{
+    order: 1;
+    border-top-left-radius: 0px;
+    box-shadow: -1px 2px 0px #D4D4D4;
+	border-radius: 5px;
+}
+
+.other{
+	border-top-left-radius: 0px;
+}
+
+.msg time {
+    font-size: 0.7rem;
+    color: #ccc;
+    margin-top: 3px;
+    float: right;
+}
+.msg time:before{
+    content:"\f017";
+    color: #ddd;
+    font-family: FontAwesome;
+    display: inline-block;
+    margin-right: 4px;
+}
+
+.msg name{
+    font-size: 0.8rem;
+    color: #bbb;
+	margin: 0 0 0.2rem 0;
+    float: left;
+}
+
+.msg {
+    background: white;
+    min-width: 50px;
+    padding: 10px;
+    border-radius: 2px;
+    box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.07);
+}
+.msg p {
+    font-size: 0.8rem;
+    color: #777;
+}
+
+input.textarea {
+    position: relative;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    width: 98%;
+    height: 35px;
+    z-index: 99;
+    background: #fafafa;
+    border: 1px solid;
+	border-color: black;
+    outline: none;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: #666;
+    font-weight: 400;
+	border-radius: 7px;
+	margin: 3;
+}
+
+.loader{
+	border: 3px solid #f3f3f3;
+	border-radius: 50%;
+	border-top: 3px solid #3498db;
+	width: 12px;
+	height: 12px;
+	-webkit-animation: spin 1s liner infinite;
+	animation: spin 1s linear infinite;
+}
+@-webkit-keyframes spin{
+	0% {-webkit-transform: rotate(0deg); }
+	100% {-webkit-transform: rotate(360deg); }
+}
+@-keyframes spin{
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
+}
+
+.log {
+	margin-top: 16px!important;
+    margin-bottom: 16px!important;
+	width: auto;
+    background-color: #fff;
+    padding: 8px 12px;
+    border-left: 4px solid #702070;
+    word-wrap: break-word;
+}
+
+.digit, .colon, .colon-off{
+  position:relative;
+  display:inline-block;
+  width:10px;
+  height:110px;
+  margin:5px;
+}
+
+
+.colon{
+  background: linear-gradient(-90deg, red 10px, transparent 10px),
+              linear-gradient(-90deg, red 10px, transparent 10px);
+  
+ 
+  background-position: 0 40px, 0 65px;
+  background-repeat:no-repeat;
+  background-size:10px 10px, 10px 10px;
+  
+}
+
+.colon-off{
+  background: linear-gradient(-90deg, #333 10px, transparent 10px),
+              linear-gradient(-90deg, #333 10px, transparent 10px);
+  
+ 
+  background-position: 0 40px, 0 65px;
+  background-repeat:no-repeat;
+  background-size:10px 10px, 10px 10px;
+  
+}
+
+.digit{
+  width:60px;
+  
+  background-image: linear-gradient(90deg, transparent 10px, #333 10px, #333 50px, transparent 50px),   /*  Top  */
+                    linear-gradient(90deg, transparent 10px, #333 10px, #333 50px, transparent 50px),   /* Middle*/
+                    linear-gradient(90deg, transparent 10px, #333 10px, #333 50px, transparent 50px),   /* Bottom*/
+          
+                    linear-gradient(90deg, #333 10px, transparent 10px, transparent 50px, #333 50px),   /* Topleft */
+                    linear-gradient(90deg, #333 10px, transparent 10px, transparent 50px, #333 50px);   /* Bottomleft */
+  
+  background-position: 0 0, 0 50px, 0 100px, 0 10px, 0 60px;
+  background-repeat:no-repeat;
+  background-size:60px 10px, 60px 10px, 60px 10px, 60px 40px, 60px 40px;
+}
+
+.zero{
+  background-image: linear-gradient(90deg, transparent 10px, red 10px, red 50px, transparent 50px),   /*  Top  */
+                    linear-gradient(90deg, transparent 10px, #333 10px, #333 50px, transparent 50px),   /* Middle*/
+                    linear-gradient(90deg, transparent 10px, red 10px, red 50px, transparent 50px),   /* Bottom*/
+          
+                    linear-gradient(90deg, red 10px, transparent 10px, transparent 50px, red 50px),   /* Topleft */
+                    linear-gradient(90deg, red 10px, transparent 10px, transparent 50px, red 50px);   /* Bottomleft */
+}
+
+.one{
+  background-image: linear-gradient(90deg, transparent 10px, #333 10px, #333 50px, transparent 50px),   /*  Top  */
+                    linear-gradient(90deg, transparent 10px, #333 10px, #333 50px, transparent 50px),   /* Middle*/
+                    linear-gradient(90deg, transparent 10px, #333 10px, #333 50px, transparent 50px),   /* Bottom*/
+          
+                    linear-gradient(90deg, #333 10px, transparent 10px, transparent 50px, red 50px),   /* Topleft */
+                    linear-gradient(90deg, #333 10px, transparent 10px, transparent 50px, red 50px);   /* Bottomleft */
+}
+
+.two{
+  background-image: linear-gradient(90deg, transparent 10px, red 10px, red 50px, transparent 50px),   /*  Top  */
+                    linear-gradient(90deg, transparent 10px, red 10px, red 50px, transparent 50px),   /* Middle*/
+                    linear-gradient(90deg, transparent 10px, red 10px, red 50px, transparent 50px),   /* Bottom*/
+          
+                    linear-gradient(90deg, #333 10px, transparent 10px, transparent 50px, red 50px),   /* Topleft */
+                    linear-gradient(90deg, red 10px, transparent 10px, transparent 50px, #333 50px);   /* Bottomleft */
+}
+
+.three{
+  background-image: linear-gradient(90deg, transparent 10px, red 10px, red 50px, transparent 50px),   /*  Top  */
+                    linear-gradient(90deg, transparent 10px, red 10px, red 50px, transparent 50px),   /* Middle*/
+                    linear-gradient(90deg, transparent 10px, red 10px, red 50px, transparent 50px),   /* Bottom*/
+          
+                    linear-gradient(90deg, #333 10px, transparent 10px, transparent 50px, red 50px),   /* Topleft */
+                    linear-gradient(90deg, #333 10px, transparent 10px, transparent 50px, red 50px);   /* Bottomleft */
+}
+
+.foure{
+  background-image: linear-gradient(90deg, transparent 10px, #333 10px, #333 50px, transparent 50px),   /*  Top  */
+                    linear-gradient(90deg, transparent 10px, red 10px, red 50px, transparent 50px),   /* Middle*/
+                    linear-gradient(90deg, transparent 10px, #333 10px, #333 50px, transparent 50px),   /* Bottom*/
+          
+                    linear-gradient(90deg, red 10px, transparent 10px, transparent 50px, red 50px),   /* Topleft */
+                    linear-gradient(90deg, #333 10px, transparent 10px, transparent 50px, red 50px);   /* Bottomleft */
+}
+
+.five{
+  background-image: linear-gradient(90deg, transparent 10px, red 10px, red 50px, transparent 50px),   /*  Top  */
+                    linear-gradient(90deg, transparent 10px, red 10px, red 50px, transparent 50px),   /* Middle*/
+                    linear-gradient(90deg, transparent 10px, red 10px, red 50px, transparent 50px),   /* Bottom*/
+          
+                    linear-gradient(90deg, red 10px, transparent 10px, transparent 50px, #333 50px),   /* Topleft */
+                    linear-gradient(90deg, #333 10px, transparent 10px, transparent 50px, red 50px);   /* Bottomleft */
+}
+
+
+.six{
+  background-image: linear-gradient(90deg, transparent 10px, #333 10px, #333 50px, transparent 50px),   /*  Top  */
+                    linear-gradient(90deg, transparent 10px, red 10px, red 50px, transparent 50px),   /* Middle*/
+                    linear-gradient(90deg, transparent 10px, red 10px, red 50px, transparent 50px),   /* Bottom*/
+          
+                    linear-gradient(90deg, red 10px, transparent 10px, transparent 50px, #333 50px),   /* Topleft */
+                    linear-gradient(90deg, red 10px, transparent 10px, transparent 50px, red 50px);   /* Bottomleft */
+}
+
+
+.seven{
+  background-image: linear-gradient(90deg, transparent 10px, red 10px, red 50px, transparent 50px),   /*  Top  */
+                    linear-gradient(90deg, transparent 10px, #333 10px, #333 50px, transparent 50px),   /* Middle*/
+                    linear-gradient(90deg, transparent 10px, #333 10px, #333 50px, transparent 50px),   /* Bottom*/
+          
+                    linear-gradient(90deg, #333 10px, transparent 10px, transparent 50px, red 50px),   /* Topleft */
+                    linear-gradient(90deg, #333 10px, transparent 10px, transparent 50px, red 50px);   /* Bottomleft */
+}
+
+
+.eight{
+  background-image: linear-gradient(90deg, transparent 10px, red 10px, red 50px, transparent 50px),   /*  Top  */
+                    linear-gradient(90deg, transparent 10px, red 10px, red 50px, transparent 50px),   /* Middle*/
+                    linear-gradient(90deg, transparent 10px, red 10px, red 50px, transparent 50px),   /* Bottom*/
+          
+                    linear-gradient(90deg, red 10px, transparent 10px, transparent 50px, red 50px),   /* Topleft */
+                    linear-gradient(90deg, red 10px, transparent 10px, transparent 50px, red 50px);   /* Bottomleft */
+}
+
+.nine{
+  background-image: linear-gradient(90deg, transparent 10px, red 10px, red 50px, transparent 50px),   /*  Top  */
+                    linear-gradient(90deg, transparent 10px, red 10px, red 50px, transparent 50px),   /* Middle*/
+                    linear-gradient(90deg, transparent 10px, red 10px, red 50px, transparent 50px),   /* Bottom*/
+          
+                    linear-gradient(90deg, red 10px, transparent 10px, transparent 50px, red 50px),   /* Topleft */
+                    linear-gradient(90deg, #333 10px, transparent 10px, transparent 50px, red 50px);   /* Bottomleft */
+}

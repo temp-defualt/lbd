@@ -1,0 +1,184 @@
+<html>
+	<head>
+		<script type="text/javascript" src="static/jquery.js"></script>
+		<title>
+			
+				DRK News!
+			
+		</title>
+	</head>
+	<div style="min-width:768px; max-width: 1024px; margin:1 auto; display: block;" align="center">
+		<header class='curvedbox'>
+			<table width='100%'>
+				<tr>
+					<td width="15%" style="align: center; " align=center>
+						<img style="align: center; border-radius: 7px;" src="static/drk_logo1.png" height=150px width=220px/>
+					</td>
+					<td width="70%" style='padding: 5px ;height: 100%;' align=center>
+						<div style='color: #222222; font-size: 22px'> Welcome to DRK&trade; news, The best news blog EVER!<div>
+					</td>
+					<td width="15%" style='align: center; padding: 5px ;height: 100%; width: 100%; min-width: 152px;' align=center>
+						<table>
+							<tr>
+								<td style='align: center; padding: 15px' align=center>
+									
+									<img style="; border-radius: 7px;" src="static/user.png" height=32px width=32px/>
+									
+								</td>
+							</tr>
+							<tr>
+								<td align="center">
+								
+								<span align="center">guest</span><br> 	
+								<a class='anchor' style='border: none; font-size: 12px;' href="login.html">Login / Register</a>
+								
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				
+			</table>
+		</header>
+		<body bgcolor='white' >
+		<link rel="stylesheet" href="static/style.css" />
+		<table width='100%' align='center' >
+				<tr>
+					<td class="blogtitle" style=' background-color: #702070; border:1px solid; border-radius: 7px; padding: 7px 10px 9px;'>
+					<table  width='100%' align='center' >
+						<tr>
+							
+							
+							<td >
+								<a align="center" style="align: center; " class='menu-item' href='index.html#main'>
+									<span style="text-align: center; "> Main Page</span> </a>
+							</td>
+							
+							<td >
+								<a align="center" style="align: center; " class='menu-item' href='index.html#tech'>
+									<span style="text-align: center; "> Tech</span> </a>
+							</td>
+							
+							<td >
+								<a align="center" style="align: center; " class='menu-item' href='index.html#sports'>
+									<span style="text-align: center; "> Sports</span> </a>
+							</td>
+							
+							<td >
+								<a align="center" style="align: center; " class='menu-item' href='index.html#fashion'>
+									<span style="text-align: center; "> Fashion</span> </a>
+							</td>
+							
+							
+						</tr>
+					</table>
+					
+					</td>
+				</tr>
+		</table>
+		<table width='100%' align='center' >
+			<tr>
+				<td>
+					<div align='left' style='width:100%; height:100%;'>
+					
+<div class="blogbody curvedbox" style="border:none; !important" align="center">
+<form action="" method='post' name='register'>
+	<table>
+		<tr>
+			<td colspan=2 style='text-align: center'>
+			Please enter your registration information below: &nbsp;
+			</td>
+		</tr>
+		<tr class='form-item' style='padding: 5px; '>
+			<td>
+				<img style='height: 128px; width: 128px;' id='usr_img' src="static/user.png" />
+			</td>
+			<td>
+				<table width=100% align='left'>
+					<tr>
+						<td>
+							<input type='text' class ='form-input' value='' name = 'first_name' placeholder='First name'/>
+						</td>
+					</tr>					
+					<tr>
+						<td>
+							<input type='text' class ='form-input' value='' name = 'last_name' placeholder='Last name'/>
+						</td>
+					</tr>					
+					<tr>
+						<td>
+							<input type='text' class ='form-input' value='' name = 'user_name' placeholder='User name'/>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<input type='password' class ='form-input' value='' name = 'password' placeholder='Password'/>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<input type='text' id='profile_url' class ='form-input' value='' name='profile_url' placeholder='Profile pic URL'/>
+						</td>
+						<td>
+							<button class='url-btn' type="button" onclick='getProfilePic();'>try...</button>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<tr>
+					<td colspan=2 align=center>
+						<input type='submit' value='submit !' class='submit-btn'/>
+					</td>
+				</tr>
+				
+			</td>
+		</tr>
+	<table>
+</form>
+</div>
+<script type="text/javascript">
+	function getProfilePic()
+	{
+		var url_regex = /^(https?:\/\/(www\.)?)?[a-z0-9]+([\-\.]{1}[a-z0-9]+)*\.[a-z]{2,5}(:[0-9]{1,5})?(\/[^\/]+)*([^\/]+\.png)(\?((\.+)\=(.+))*)?$/gm
+
+		url = $("#profile_url")[0].value;
+		if (url != "")
+		{
+			if (!url_regex.test (url))
+			{
+				alert ("Not a valid PNG url! " + url);
+				return;
+				
+			}
+			
+			$.getJSON ('testProfilePng', { u: btoa(url) }, showProfilePng)		
+		}
+	}
+	
+	function showProfilePng (json)
+	{
+		if (json && 'png' in json)
+		{
+			$("#usr_img")[0].src = '/profilePics/' + json.png;
+		}
+		
+		if (json && 'err' in json && json.err != "" && json.err != "200" && json.err != "OK")
+		{
+			alert (json.err);
+		}
+	}
+</script>
+		
+					</div>
+				</td>
+			</tr>
+		</table>
+		<div class="blogfooter">
+		<span>Powered by </span><a class="lightweb" href="administration.html">LightWeb&trade; 3.0</a>
+		</div
+	</body>
+	</div>
+</html>
